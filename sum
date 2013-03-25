@@ -6,8 +6,11 @@ int main(int argc, char *argv[])
      vector();
       int s;
      int vector(s):s;
-     vector( vector&);
+     vector( int);
+       vector(vector &tocopy);           
      ~vector();
+void getVector();
+void setVector();
       \\данна дія повинна додавати вектори
      \\void vector::operator(vector&a);
      \\int s=size();
