@@ -28,7 +28,9 @@ int main(int argc, char *argv[])
       {for(int i; i<size;i++)
         vector mnozh=a.elem(i)*k;
         return mnozh;
-      
+double l;
+for (int i; i<size-1;i++)
+l=sqrt(a.elem(i)*a.elem(i)+a.elem(i+1)*a.elem(i+1))      
               
     system("PAUSE");
     return EXIT_SUCCESS;
