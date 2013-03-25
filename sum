@@ -25,16 +25,19 @@ void setVector();\\виведення вектора
       {for(int i; i<size;i++)
         vector mnozh=a.elem(i)*k;
         return mnozh;
-double l;\\довжина вектора (ще потрібно доредагувати)
-for (int i; i<size-1;i++)
-{l=sqrt(a.elem(i)*a.elem(i)+a.elem(i+1)*a.elem(i+1));    }  
-  vector a;
-a.push_back("25");  \\додавання елемента в кінець вектора
-  
-sort(a.begin(), a.end()); \\сортівання вектора
- 
-a.erase( unique(a.begin(), a.end() ), a.end() );   \\видалення однакових елементів
- 
+       double l;\\довжина вектора (ще потрібно доредагувати)
+       for (int i; i<size-1;i++)
+       {l=sqrt(a.elem(i)*a.elem(i)+a.elem(i+1)*a.elem(i+1));    
+       return l;}  
+        vector a;
+       {a.push_back("25");  \\додавання елемента 25 в кінець вектора
+       return a;}  
+       vector a;
+       {sort(a.begin(), a.end());\\сортування вектора
+       return a;}
+       vector a;
+       {a.erase( unique(a.begin(), a.end() ), a.end() );   \\видалення однакових елементів
+       return a;}
 
     system("PAUSE");
     return EXIT_SUCCESS;
