@@ -28,10 +28,17 @@ int main(int argc, char *argv[])
       {for(int i; i<size;i++)
         vector mnozh=a.elem(i)*k;
         return mnozh;
-double l;
+double l;\\довжина вектора (ще потрібно доредагувати)
 for (int i; i<size-1;i++)
-l=sqrt(a.elem(i)*a.elem(i)+a.elem(i+1)*a.elem(i+1))      
-              
+{l=sqrt(a.elem(i)*a.elem(i)+a.elem(i+1)*a.elem(i+1));    }  
+  vector a;
+a.push_back("25");  \\додавання елемента в кінець вектора
+  
+sort(a.begin(), a.end()); \\сортівання вектора
+ 
+a.erase( unique(a.begin(), a.end() ), a.end() );   \\видалення однакових елементів
+ 
+
     system("PAUSE");
     return EXIT_SUCCESS;
 }
