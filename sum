@@ -1,0 +1,37 @@
+using namespace std;
+
+int main(int argc, char *argv[])
+{class vector;
+       public:
+     vector();
+      int s;
+     int vector(s):s;
+     vector( vector&);
+     ~vector();
+      
+     \\void vector::operator(vector&a);
+     \\int s=size();
+     \\int k();
+     \\int k(const &k);
+     \\Vec operator+(Vec &a, Vec &b)
+     \\int s=a.size();
+      
+      vector sum(s);\\сума векторів
+      for(int i;i<size;i++)
+      {sum.elem(i)=a.elem(i)+b.elem(i);
+      return sum; }
+      vector dif(i)\\віднімання
+      {for(int i; i<size;i++)
+      dif.elem(i)=a.elem(i)-b.elem(i);
+      return dif;}
+      vector mnozh\\множення
+      {for(int i; i<size;i++)
+        vector mnozh=a.elem(i)*k;
+        return mnozh;
+      
+              
+    system("PAUSE");
+    return EXIT_SUCCESS;
+}
+
+
