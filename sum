@@ -8,7 +8,7 @@ int main(int argc, char *argv[])
      int vector(s):s;
      vector( vector&);
      ~vector();
-      
+      \\данна дія повинна додавати вектори
      \\void vector::operator(vector&a);
      \\int s=size();
      \\int k();
@@ -16,7 +16,7 @@ int main(int argc, char *argv[])
      \\Vec operator+(Vec &a, Vec &b)
      \\int s=a.size();
       
-      vector sum(s);\\сума векторів
+      vector sum(s);\\сума векторів (2)
       for(int i;i<size;i++)
       {sum.elem(i)=a.elem(i)+b.elem(i);
       return sum; }
