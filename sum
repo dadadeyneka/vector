@@ -25,9 +25,15 @@ void setVector();\\виведення вектора
       {for(int i; i<size;i++)
         vector mnozh=a.elem(i)*k;
         return mnozh;
-       double l;\\довжина вектора (ще потрібно доредагувати)
+       vector scolar;\\сколярний добуток векторів
+       {for (iny i; i<size;i++)
+       vector scolar=a.elem(i)*b.elem(i)+a.elem(1)*b.elem(1);
+       return scolar;
+       if (scolar==0) \\перпендикулярність векторів
+       cout>>"вектор перпендикулярний"}
+       double l;\\довжина вектора 
        for (int i; i<size-1;i++)
-       {l=sqrt(a.elem(i)*a.elem(i)+a.elem(i+1)*a.elem(i+1));    
+       {l=sqrt(a.elem(i)*a.elem(i)+a.elem(1)*a.elem(1));    
        return l;}  
         vector a;
        {a.push_back("25");  \\додавання елемента 25 в кінець вектора
