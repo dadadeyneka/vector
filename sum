@@ -31,6 +31,12 @@ void setVector();\\виведення вектора
        return scolar;
        if (scolar==0) \\перпендикулярність векторів
        cout>>"вектор перпендикулярний"}
+       double k; double a;\\знаходження кута між векторами
+       for(int i; i<size; i++)
+       {t=o;
+       double t=(a.elem(1)*b.elem(1)+a.elem(i)*b.elem(i))/(sqrt(sqr(a.elem(1))+sqr(a.elem(i)))*sqrt(sqr(b.elem(1)+sqr(b.elem(i)))));
+       arcos t=a;
+       return a;}
        double l;\\довжина вектора 
        for (int i; i<size-1;i++)
        {l=sqrt(a.elem(i)*a.elem(i)+a.elem(1)*a.elem(1));    
