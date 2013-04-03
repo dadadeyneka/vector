@@ -3,16 +3,27 @@ using namespace std;
 int main(int argc, char *argv[])
 {class vector;
        public:
-     vector();
-      int s;
-     int vector(s):s;
-     vector( int);
-       vector(vector &tocopy);           
-     ~vector();
-void getVector();\\заповнення вектора
-void setVector();\\виведення вектора
-      
-      
+       vector();
+       ~vector();
+       vector(int s);
+       vector(const vector &a);           
+       void getVector();\\заповнення вектора     
+       void setVector();\\виведення вектора
+       vektor operator+ (const vektor &a);//перегрузка оператора + 
+       vektor operator- (const vektor &a);//перегрузка оператора - 
+       vektor operator* (const vektor &a);//перегрузка оператора * 
+       vektor operator* (const int a);//перегрузка оператора * 
+       int& operator ;//перегрузка оператора індексування 
+       bool operator== (const Vektor &a);//перегрузка оператора сравнения 
+       vektor operator+= (vektor &a);//перегрузка оператора += 
+       vektor operator-= (vektor &a);//перегрузка оператора -= 
+       vektor operator*= (vektor *a);//перегрузка оператора = 
+       vektor operator= (int a);//перегрузка оператора = 
+       vektor operator= (const vektor &a);//перегрузка оператора = 
+       bool operator!= (Vektor a);//перегрузка оператора != 
+       friend 
+       std:: ostream& operator<< (std:: ostream& a, const Vektor a);//метод вывода 
+       private:
       vector sum(s);\\сума векторів (2)
       for(int i;i<size;i++)
       {sum.elem(i)=a.elem(i)+b.elem(i);
@@ -26,7 +37,7 @@ void setVector();\\виведення вектора
         vector mnozh=a.elem(i)*k;
         return mnozh;
        vector scolar;\\сколярний добуток векторів
-       {for (iny i; i<size;i++)
+       {for (int i; i<size;i++)
        vector scolar=a.elem(i)*b.elem(i)+a.elem(1)*b.elem(1);
        return scolar;
        if (scolar==0) \\перпендикулярність векторів
