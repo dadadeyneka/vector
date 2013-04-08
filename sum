@@ -1,69 +1,54 @@
 using namespace std;
 
 int main(int argc, char *argv[])
-{class vector;
-       public:
+class vector;
+     {double x,y,z;
+public:
        vector();
+       vector(double x, double y, double z);
        ~vector();
-       vector(int s);
-       vector(const vector &a);           
-       void getVector();\\заповнення вектора     
-       void setVector();\\виведення вектора
-       vektor operator+ (const vektor &a);//перегрузка оператора + 
-       vektor operator- (const vektor &a);//перегрузка оператора - 
-       vektor operator* (const vektor &a);//перегрузка оператора * 
-       vektor operator* (const int a);//перегрузка оператора * 
-       int& operator ;//перегрузка оператора індексування 
-       bool operator== (const Vektor &a);//перегрузка оператора сравнения 
-       vektor operator+= (vektor &a);//перегрузка оператора += 
-       vektor operator-= (vektor &a);//перегрузка оператора -= 
-       vektor operator*= (vektor *a);//перегрузка оператора = 
-       vektor operator= (int a);//перегрузка оператора = 
-       vektor operator= (const vektor &a);//перегрузка оператора = 
-       bool operator!= (Vektor a);//перегрузка оператора != 
-       friend 
-       std:: ostream& operator<< (std:: ostream& a, const Vektor a);//метод вывода 
-       private:
-      vector sum(s);\\сума векторів (2)
-      for(int i;i<size;i++)
-      {sum.elem(i)=a.elem(i)+b.elem(i);
-      return sum; }
-      vector dif(i)\\віднімання
-      {for(int i; i<size;i++)
-      dif.elem(i)=a.elem(i)-b.elem(i);
-      return dif;}
-      vector mnozh\\множення
-      {for(int i; i<size;i++)
-        vector mnozh=a.elem(i)*k;
-        return mnozh;
-       vector scolar;\\сколярний добуток векторів
-       {for (int i; i<size;i++)
-       vector scolar=a.elem(i)*b.elem(i)+a.elem(1)*b.elem(1);
-       return scolar;
+friend:
+       vector operator+(vector a, vector b); //додавання векторів
+       vector operator-(vector a, vector b); //віднімання векторів
+       vector operator*(vector a, double scalar); //множення вектора на скаляр
+        double operator*(vector a, vector b); //скалярний добуток векторів
+       double abs(vector a, vector b); //модуль вектора
+};
+int main(int argc, char *argv[])
+double x=2 y=4 z=6;
+vector operation+(vector a, vector b);
+       {vector summ;
+       summ.x=x.a+x.b;
+       summ.y=a.y+b.y;
+       summ.z=a.z+b.z;
+       return summ;
+       cout>>vector summ;}
+vector operation-(vector a, vector b);
+       {vector diff;
+       diff.x=a.x-b.x;
+       diff.y=a.y-b.y;
+       diff.x=a.z-b.z;
+       return diff;
+       cout>> vector diff;}
+vector operation*(vector a,double scalar);
+       {vector scal;
+       scal.x=a.x*scalar;
+       scal.y=a.y*scalar;
+       scal.z=a.z*scalar;
+       return scal;
+       cout>> vector scal;}
+double operation*(vector a, vector b);
+       {double k;
+       k=a.x*b.x+a.y*b.y+a.z*b.z;
+       return k;
+       cout>>"k=%lf";
        if (scolar==0) \\перпендикулярність векторів
-       cout>>"вектор перпендикулярний"}
-       double k; double a;\\знаходження кута між векторами
-       for(int i; i<size; i++)
-       {t=o;
-       double t=(a.elem(1)*b.elem(1)+a.elem(i)*b.elem(i))/(sqrt(sqr(a.elem(1))+sqr(a.elem(i)))*sqrt(sqr(b.elem(1)+sqr(b.elem(i)))));
-       arcos t=a;
-       return a;}
-       double l;\\довжина вектора 
-       for (int i; i<size-1;i++)
-       {l=sqrt(a.elem(i)*a.elem(i)+a.elem(1)*a.elem(1));    
-       return l;}  
-        vector a;
-       {a.push_back("25");  \\додавання елемента 25 в кінець вектора
-       return a;}  
-       vector a;
-       {sort(a.begin(), a.end());\\сортування вектора
-       return a;}
-       vector a;
-       {a.erase( unique(a.begin(), a.end() ), a.end() );   \\видалення однакових елементів
-       return a;}
+       cout>>"perpendicularny"}}
+double abs(vector a, vector b);
+       {asb=sqrt(a.x*b.x+a.y*b.y+a.z*b.z);
+       return abs;
+       cout>>"abs=%lf";}
 
     system("PAUSE");
     return EXIT_SUCCESS;
 }
-
-
