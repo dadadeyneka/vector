@@ -14,7 +14,7 @@ friend:
         double operator*(vector a, vector b); //скалярний добуток векторів
        double abs(vector a, vector b); //модуль вектора
 };
-int main(int argc, char *argv[])
+
 
 vector operation+(vector a, vector b);
        {vector summ;
