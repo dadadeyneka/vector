@@ -9,10 +9,9 @@ protected:
           double x;
           double y;
           double z;
-          double k;
+         
 public:   
        double module();
-       double skaldobutok(vector scal);
        double*get_x();
        void set_x(double*new_x);
        double*get_y();
@@ -62,8 +61,7 @@ vector vector::operator*(vector mnozhn)
        return new_mnozhn;
        }
  int main()
-{   vector k (2,2,3);
-    vector a(-5, 4, 6);//Caaa?ii ii?aoeia? cia?aiiy ia?oiai eiiieaeniiai ?enea
+{   vector a(-5, 4, 6);//Caaa?ii ii?aoeia? cia?aiiy ia?oiai eiiieaeniiai ?enea
     vector b(1, -8, 4); //Caaa?ii ii?aoeia? cia?aiiy a?oaiai eiiieaeniiai ?enea
     cout << "Mu maemo dva vectora: " << '\n'; 
     cout << "a="; 
