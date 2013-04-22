@@ -1,0 +1,24 @@
+class vector;
+Vector::Vector()\\конструктор по замовчанню
+size=[15];\\розмір вктора
+memory= new Array [size];\\виділення пам`яті для об`єктів array
+for(int i; i<size; i++)
+memory[xi]=0;\\обнулення усіх елементів масиву
+Vector::Vector (int vectorSize; int arraySize);\\створення конструктора з параметрами
+{size=vectorSize > 0 & vectorSize : 1);\\ виділення 1ї строки для вектора
+for(int ix=o; ix<size; ix++)
+{memory[ix]=0;}\\обнулення вектора
+Vector::vector( &vectorToCopy);
+:size(vectorToCopy.size)
+{
+vector= mew Array [size];
+for(int ix=0; ix<size; i++)
+{memory[ix].setSize(arraySize >0 & arraySize : 15);\\виділення 15 місць для елементів вектора
+}
+for (int ix=0; ix < size; ix++)
+{memory[ix]=vectorToCopy[ix];}\\заповнення значеннями вектора копіювання
+Vector::~Vector
+{delate[]memory;}\\деструктор
+
+
+
