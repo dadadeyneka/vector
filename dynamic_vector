@@ -1,4 +1,4 @@
-class vector;
+class Vector
 Vector::Vector()\\конструктор по замовчанню
 size=[15];\\розмір вктора
 memory= new Array [size];\\виділення пам`яті для об`єктів array
