@@ -85,7 +85,6 @@ vector vector::operator*(vector mnozhn)
     system("PAUSE");
         return 0;
 }
-
   
 
 
