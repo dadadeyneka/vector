@@ -22,27 +22,27 @@ public:
        vector();
        vector(double x, double y, double z);
        void show_vector();
-       vector operator+(vector summ); //aiaaaaiiy aaeoi??a
-       vector operator-(vector riz); //a?ai?iaiiy aaeoi??a
-       vector operator*(vector mnozhn); //iii?aiiy aaeoi?a ia neaey?
+       vector operator+(vector summ); //оператор перезагрузки +
+       vector operator-(vector riz); //оператор перезагрузки -
+       vector operator*(vector mnozhn); //оператор множення
 };
 void vector::show_vector()
 {
      cout << x << showpos << y << z << noshowpos;
 }
-vector::vector()// ?aae?cao?y eiino?oeoi?a aac ia?aiao??a
+vector::vector()//задання вектора
 {
-    x = 0;// iaioey?ii ii?aoeia? cia?aiiy a?enii? oa oyaii? ?anoei
+    x = 0;
     y = 0;
     z=0;
 } 
-vector::vector(double x, double y, double z)// ?aae?cao?y eiino?oeoi?a c ia?aiao?aie
+vector::vector(double x, double y, double z)// отримання даних про змінні вектора
 {
     this->x = x;
     this->y = y;
      this->z = z;
 }
-double vector::module()// реалізація знаходження модуля від вектора
+double vector::module()// реалізація знаходження довжини вектора
 { 
     return (x*x + y*y+z*z);
 }  
@@ -61,25 +61,25 @@ vector vector::operator*(vector mnozhn)
        return new_mnozhn;
        }
  int main()
-{   vector a(-5, 4, 6);//Caaa?ii ii?aoeia? cia?aiiy ia?oiai eiiieaeniiai ?enea
-    vector b(1, -8, 4); //Caaa?ii ii?aoeia? cia?aiiy a?oaiai eiiieaeniiai ?enea
+{   vector a(-5, 4, 6);//створення ершого вектора
+    vector b(1, -8, 4); //створення другого вектора
     cout << "Mu maemo dva vectora: " << '\n'; 
     cout << "a="; 
-    a.show_vector(); // aeaiaeii ia?oa eiiieaenia ?enei ia ae?ai
+    a.show_vector(); //виведення на екран вектора а
     cout << "   ";
     cout << "b="; 
-    b.show_vector(); // aeaiaeii a?oaa eiiieaenia ?enei ia ae?ai
+    b.show_vector(); //виведення на екран вектора б
     cout << '\n';
     cout << "Modul a=" << a.module() << '\n'; // виведення модуля першого вектора
     cout << "Modul b=" << a.module() << '\n'; //
     cout << "a + b = ";
-    (a + b).show_vector(); // Aeaaaaiiy ?acoeuoao?a ?aae?cao?? i?ioano aiaaaaiiy
+    (a + b).show_vector(); //виведення суми
     cout << '\n';
     cout << "a - b = ";
-    (a - b).show_vector(); // Aeaaaaiiy ?acoeuoao?a ?aae?cao?? i?ioano a?ai?iaiiy
+    (a - b).show_vector(); //виведення різниці
     cout << '\n';
     cout << "a * b = "; 
-    (a * b).show_vector(); // Aeaaaaiiy ?acoeuoao?a ?aae?cao?? i?ioano iii?aiiy
+    (a * b).show_vector(); //виведення добутку
     cout << '\n';
     cout << '\n';
     system("PAUSE");
