@@ -79,7 +79,7 @@ vector vector::operator*(vector mnozhn)
     (a - b).show_vector(); //виведення різниці
     cout << '\n';
     cout << "a * b = "; 
-    (a * b).show_vector(); //виведення добутку
+    (a * b).show_vector(); // виведення добутку
     cout << '\n';
     cout << '\n';
     system("PAUSE");
