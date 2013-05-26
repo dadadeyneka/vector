@@ -19,6 +19,26 @@ for (int ix=0; ix < size; ix++)
 {memory[ix]=vectorToCopy[ix];}\\заповнення значеннями вектора копіювання
 Vector::~Vector
 {delate[]memory;}\\деструктор
-
-
+int Vector::getSize() const\\ отрисання довжини вектора
+{return size;
+}
+void Vector::getVector()\\заповнення вектора
+{for(int i=0; i<size;i++)
+cin>>memory[i];
+}
+void Matrix::getMatrix\\виведення вектора
+{ for(int i=0;i<size;i++)
+{cout<<std.endl
+}}
+Vector Vector:: operator+(const Vector &a)
+{Vector result(size, memory<getSize())
+for(int i=0;i<size;i++)
+result.memory=memory[i]+a.result[i];
+return result;}
+Vector Vector:: operator-(const Vector &a)
+{Vector result(size,memory<getSize())
+for (int i=0;i<size;i++
+result.memory=memory[i]-a.memory[i];
+return result;
+}
 
